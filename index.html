@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Operating System Learning Portal</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background: #f4f6f9;
+        color: #333;
+    }
+
+    header {
+        background: linear-gradient(to right, #0066cc, #00b4db);
+        color: white;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .container {
+        width: 90%;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .card {
+        background: white;
+        padding: 20px;
+        margin: 15px 0;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+        color: #0066cc;
+    }
+
+    .features {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .feature-box {
+        flex: 1 1 250px;
+        background: #eaf4ff;
+        padding: 15px;
+        border-radius: 8px;
+        text-align: center;
+    }
+
+    .types {
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+        gap: 15px;
+    }
+
+    .type-card {
+        background: #dff9fb;
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    .quiz {
+        margin-top: 20px;
+    }
+
+    .question {
+        margin-bottom: 20px;
+    }
+
+    button {
+        background: #0066cc;
+        color: white;
+        border: none;
+        padding: 12px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #004c99;
+    }
+
+    #result {
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 20px;
+        color: green;
+    }
+
+    footer {
+        text-align: center;
+        background: #0066cc;
+        color: white;
+        padding: 15px;
+        margin-top: 30px;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Operating System Learning Portal</h1>
+    <p>Learn the Basics of Operating Systems with Interactive Quiz</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>What is an Operating System?</h2>
+        <p>
+            An Operating System (OS) is system software that manages computer
+            hardware and software resources and provides services for computer programs.
+            It acts as an interface between the user and computer hardware.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Key Features of Operating System</h2>
+
+        <div class="features">
+            <div class="feature-box">
+                <h3>Process Management</h3>
+                <p>Handles creation, scheduling, and termination of processes.</p>
+            </div>
+
+            <div class="feature-box">
+                <h3>Memory Management</h3>
+                <p>Allocates and deallocates memory efficiently.</p>
+            </div>
+
+            <div class="feature-box">
+                <h3>File Management</h3>
+                <p>Organizes files and directories on storage devices.</p>
+            </div>
+
+            <div class="feature-box">
+                <h3>Security</h3>
+                <p>Protects data and system resources from unauthorized access.</p>
+            </div>
+
+            <div class="feature-box">
+                <h3>Device Management</h3>
+                <p>Controls communication with hardware devices.</p>
+            </div>
+
+            <div class="feature-box">
+                <h3>User Interface</h3>
+                <p>Provides GUI or CLI for user interaction.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Types of Operating Systems</h2>
+
+        <div class="types">
+            <div class="type-card">
+                <h3>Batch OS</h3>
+                <p>Executes batches of jobs without user interaction.</p>
+            </div>
+
+            <div class="type-card">
+                <h3>Time Sharing OS</h3>
+                <p>Allows multiple users to access the system simultaneously.</p>
+            </div>
+
+            <div class="type-card">
+                <h3>Distributed OS</h3>
+                <p>Manages multiple computers as a single system.</p>
+            </div>
+
+            <div class="type-card">
+                <h3>Real-Time OS</h3>
+                <p>Provides quick response for time-critical applications.</p>
+            </div>
+
+            <div class="type-card">
+                <h3>Network OS</h3>
+                <p>Supports networking and resource sharing.</p>
+            </div>
+
+            <div class="type-card">
+                <h3>Mobile OS</h3>
+                <p>Designed for smartphones and tablets.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card quiz">
+        <h2>Operating System Quiz</h2>
+
+        <div class="question">
+            <p><b>1. What is the main function of an Operating System?</b></p>
+            <input type="radio" name="q1" value="correct"> Manage hardware and software resources<br>
+            <input type="radio" name="q1"> Create hardware devices<br>
+            <input type="radio" name="q1"> Design applications<br>
+        </div>
+
+        <div class="question">
+            <p><b>2. Which OS is used for time-critical applications?</b></p>
+            <input type="radio" name="q2"> Batch OS<br>
+            <input type="radio" name="q2" value="correct"> Real-Time OS<br>
+            <input type="radio" name="q2"> Network OS<br>
+        </div>
+
+        <div class="question">
+            <p><b>3. Which feature manages files and folders?</b></p>
+            <input type="radio" name="q3"> Memory Management<br>
+            <input type="radio" name="q3" value="correct"> File Management<br>
+            <input type="radio" name="q3"> Security<br>
+        </div>
+
+        <div class="question">
+            <p><b>4. Which Operating System is commonly used on smartphones?</b></p>
+            <input type="radio" name="q4"> Distributed OS<br>
+            <input type="radio" name="q4" value="correct"> Mobile OS<br>
+            <input type="radio" name="q4"> Batch OS<br>
+        </div>
+
+        <div class="question">
+            <p><b>5. Which component allocates memory to processes?</b></p>
+            <input type="radio" name="q5"> Security Manager<br>
+            <input type="radio" name="q5"> File System<br>
+            <input type="radio" name="q5" value="correct"> Memory Management<br>
+        </div>
+
+        <button onclick="checkQuiz()">Submit Quiz</button>
+
+        <div id="result"></div>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 Operating System Learning Portal
+</footer>
+
+<script>
+function checkQuiz() {
+    let score = 0;
+
+    const answers = document.querySelectorAll('input[value="correct"]:checked');
+
+    score = answers.length;
+
+    document.getElementById("result").innerHTML =
+        "Your Score: " + score + " / 5";
+}
+</script>
+
+</body>
+</html>
